@@ -1,10 +1,349 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="This is sangyun's portfolio made with Html,Css,JavaScript"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Portfolio</title>
+    <script src="./js/about.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/project.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-code"></i>
+        <a href="/index.html">{Portpolio}</a>
+      </div>
+      <div class="navbar__menu__Container">
+        <ul class="navbar__menu">
+          <li class="navbar__item" data-link="#home">Home</li>
+          <li class="navbar__item" data-link="#about">About</li>
+          <li class="navbar__item" data-link="#skills">Skill</li>
+          <li class="navbar__item" data-link="#project">Project</li>
+        </ul>
+      </div>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!-- Home -->
+    <main>
+      <section id="home">
+        <div class="home__pharse">안녕하세요! 반갑습니다!</div>
+        <div class="home__subpharse"><b>About me</b> 를 눌러주세요</div>
+        <button class="home__to__about" data-link="#about">About me</button>
+      </section>
+      <section id="about">
+        <h1 class="about__title">&lt;About Me/&gt;</h1>
+        <div class="about__card">
+          <div class="image__Container">
+            <div id="about__image"></div>
+            <h1 class="about__name">이태준</h1>
+            <div class="link__Container">
+              <div class="about__linkBtn">
+                <a href="https://github.com/yeonahlee" target="blank">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="about__info">
+              <h2 class="info__title">INFO</h2>
+              <div class="list__Container">
+                <div class="item__Container">
+                  <h3>Activity</h3>
+                  <ul class="info__items">
+                    <li>- 동서울대학교 정보통신과 ICT보안전공</li>
+                    <li>- 리눅스 운영, 리눅스 서버 보안</li>
+                    <li>
+                      - 네트워크 설계 및 구축, 네트워크 장비관리, 네트워크
+                      자동화, 네트워크 보안
+                    </li>
+                    <li>- 클라우드시스템 보안, DataBase, 데이터 통신</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="info__divide"></div>
+                <div class="item__Container">
+                  <h3>Privacy</h3>
+                  <ul class="info__items">
+                    <li>-나이 : 24세</li>
+                    <li>-직업 : 대학생</li>
+                    <li>-E-mail : yeonah@kakao.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="about__info description">
+              <h2>Story</h2>
+              <p>
+                FrontEnd를 시작으로 BackEnd, App 개발을 공부해 하나의 거대한
+                서비스를 만드는 것이 저의 목표입니다. FrontEnd를 100% 완벽하게
+                할 순 없지만 <mark>99% 완벽하게 정복</mark>하고자 합니다. 정복을
+                위해, 블로그를 만드는 시점부터 <mark>1일 1커밋</mark>을
+                실천중입니다. 프로젝트를 진행하면서 발견되는 오류들에 대한 해결
+                방법을 기록 하고, 개발과 관련된 방대한 지식들에 대해 공부 하고
+                기록하고자 <mark>개발 블로그</mark>도 사용중입니다.(저의 깃헙
+                주소는 바로 옆 프로필 사진 밑에 링크를 걸어두었습니다.)
+                조급해하지 않고, 꾸준한 성장을 추구하는 개발자가 되고자 노력하고
+                있습니다. 저의 스토리를 읽어주셔서 감사합니다!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2 class="skills__title">&lt;Skill/&gt;</h2>
+        <div class="skills__container">
+          <img class="skills__image hcj" src="/images/HJC.png" alt="" />
+          <img class="skills__image react" src="/images/react.png" alt="" />
+          <img class="skills__image redux" src="/images/redux.png" alt="" />
+        </div>
+      </section>
+      <section id="project">
+        <h2 class="project__title">&lt;Project/&gt;</h2>
+        <div class="project__buttons">
+          <button class="project__button" data-type="all">All</button>
+          <button class="project__button" data-type="javascript">
+            JavaScript
+          </button>
+          <button class="project__button" data-type="react">React.js</button>
+        </div>
+        <div class="project__projects">
+          <div class="project__container portfolio" data-type="javascript">
+            <div class="project__description">
+              <h3>Portfolio</h3>
+              <div class="description__divide"></div>
+              <span>포트폴리오 사이트 제작</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="https://yeonahlee.github.io/portfolio/" target="blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="javascript">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="javascript">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="javascript">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="javascript">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="javascript">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="javascript">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="react">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="react">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="react">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="react">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project__container" data-type="react">
+            <div class="project__description">
+              <h3>Not Update</h3>
+              <div class="description__divide"></div>
+              <span>......</span>
+              <div class="description__links">
+                <a href="#">
+                  <img class="link__image" src="/images/weblink.png" alt="" />
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="far fa-list-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <i class="fas fa-chevron-up goback__first"></i>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <span>&copy 2021. TAEJUN LEE all rights reserved.</span>
+    </footer>
+  </body>
 </html>
